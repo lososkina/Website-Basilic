@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кулинарный проект «Базилик»</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="" class="logo-link">
+            <img src="img/logo.svg" alt="" class="logo-link__img">
+        </a>
+        <nav class="header__nav">
+            <a href="#section-about-us" class="header__link">О нас</a>
+            <a href="#section-our-pluses" class="header__link">Преимущества</a>
+            <a href="#section-services" class="header__link">Услуги</a>
+            <a href="#section-reviews" class="header__link">Отзывы</a>
+            <a href="#section-contacts" class="header__link">Контакты</a>
+        </nav>
+        <button onclick="showBurgerMenu(true)" class="button-burger header__button-burger">
+            <svg width="45" height="24" viewBox="0 0 45 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="45" height="3.3318" fill="#93b390" />
+                <rect y="9.99561" width="45" height="3.3318" fill="#93b390" />
+                <rect y="19.9907" width="45" height="3.3318" fill="#93b390" />
+            </svg>
+        </button>
+    </header>
+    <section class="section-main">
+        <h1 class="header--primary section-main__header--primary">Кулинарный проект «Базилик»</h1>
+        <p class="section-main__hashtag">#готовить может каждый</p>
+        <button class="button">
+            <p class="button__text" onclick="showModalWindow()">Оставить заявку</p>
+        </button>
+    </section>
+    <section class="section-about-us" id="section-about-us">
+        <div class="section-about-us__block-titles">
+            <h2 class="header--secondary">О нас</h2>
+            <p class="section-about-us__text">
+                <strong class="section-about-us__strong">«Базилик»</strong> - один из лидерующих кулинарных проектов в
+                Марий Эл
+            </p>
+        </div>
+        <div class="section-about-us__block-images">
+            <img src="img/section-about-us/1.png" alt="" class="section-about-us__img section-about-us__img--first">
+            <img src="img/section-about-us/2.png" alt="" class="section-about-us__img section-about-us__img--second">
+        </div>
+        <div class="section-about-us__block-text">
+            <p class="section-about-us__text">
+                <strong class="section-about-us__strong">Работаем для вас уже более 5 лет</strong>
+            </p>
+            <hr class="section-about-us__hr">
+            <p class="section-about-us__text">
+                Наша студия про удивительное обучение навыкам готовки под чутким
+                руководством профессиональных поваров. Здесь не продаются готовые
+                блюда. Мы предоставляем услуги, которыми может воспользоваться
+                любой желающий.
+            </p>
+        </div>
+    </section>
+    <section class="section-our-pluses" id="section-our-pluses">
+        <hr class="section__hr">
+        <h4 class="header--quaternary section-our-pluses__header--quaternary">ПОЧЕМУ МЫ?</h4>
+        <h2 class="header--secondary section-our-pluses__header--secondary">Наши преимущества</h2>
+        <div class="section-our-pluses__list">
+            <div class="pluses-list__content">
+                <div class="section-our-pluses__pluses-item">
+                    <img src="img/section-our-pluses/1.svg" alt="" class="pluses-item__icon">
+                    <p class="pluses-item__header">Расположение</p>
+                    <p class="pluses-item__description">в самом центре города</p>
+                </div>
+                <div class="section-our-pluses__pluses-item">
+                    <img src="img/section-our-pluses/2.svg" alt="" class="pluses-item__icon">
+                    <p class="pluses-item__header">Меню</p>
+                    <p class="pluses-item__description">более 500 рецептов блюд со всего мира</p>
+                </div>
+                <div class="section-our-pluses__pluses-item">
+                    <img src="img/section-our-pluses/3.svg" alt="" class="pluses-item__icon">
+                    <p class="pluses-item__header">Удобство</p>
+                    <p class="pluses-item__description">3 просторные оснащенные студии</p>
+                </div>
+                <div class="section-our-pluses__pluses-item">
+                    <img src="img/section-our-pluses/4.svg" alt="" class="pluses-item__icon">
+                    <p class="pluses-item__header">Персонал</p>
+                    <p class="pluses-item__description">профессиональные шеф-повара </p>
+                </div>
+                <div class="section-our-pluses__pluses-item">
+                    <img src="img/section-our-pluses/5.svg" alt="" class="pluses-item__icon">
+                    <p class="pluses-item__header">Тех. оснащение</p>
+                    <p class="pluses-item__description">техника премиум-класса (Bosch, Neff)</p>
+                </div>
+            </div>
+            <div class="pluses-list__border"></div>
+            <div class="pluses-list__border"></div>
+            <div class="pluses-list__border"></div>
+            <div class="pluses-list__border"></div>
+        </div>
+    </section>
+    <section class="section-services" id="section-services">
+        <hr class="section__hr section-services__hr">
+        <h4 class="header--quaternary section-services__header--quaternary">ЧЕМУ НАУЧИМ?</h4>
+        <h2 class="header--secondary section-services__header--secondary">Услуги</h2>
+        <h3 class="header--tertiary section-services__header--tertiary">
+            #мастер-класс на любой вкус
+        </h3>
+        <div class="section-services__slider">
+            <button onclick="swipeService(false, 'left')" class="slider__button-arrow">
+                <img src="img/left-arrow.svg" alt="">
+            </button>
+            <div class="section-services__list">
+                <div class="section-services__border"></div>
+                <div class="section-services__border"></div>
+                <div class="section-services__window">
+                    <div class="section-services__content">
+                        <div class="section-services__item">
+                            <img src="img/section-services/1.png" alt="" class="services-item__img">
+                            <p class="services-item__date">04<br>мая</p>
+                            <div class="services-item__title-block">
+                                <div class="services-item__line"></div>
+                                <p class="services-item__header">Домашняя кухня</p>
+                            </div>
+                            <div class="services-item__info-block">
+                                <img src="img/section-services/time-icon.svg" alt="" class="services-item__icon">
+                                <p class="services-item__info-text">18:00-21:00</p>
+                            </div>
+                            <div class="services-item__info-block">
+                                <img src="img/section-services/seats-icon.svg" alt="" class="services-item__icon">
+                                <p class="services-item__info-text">Осталось 3 места</p>
+                            </div>
+                            <div class="services-item__info-block">
+                                <img src="img/section-services/ruble-icon.svg" alt="" class="services-item__icon">
+                                <p class="services-item__info-text">1500 рублей</p>
+                            </div>
+                            <button class="button services-item__button" onclick="showModalWindow()">Оставить
+                                заявку</button>
+                        </div>
+                        <div class="section-services__item">
+                            <img src="img/section-services/2.png" alt="" class="services-item__img">
+                            <p class="services-item__date">10<br>мая</p>
+                            <div class="services-item__title-block">
+                                <div class="services-item__line"></div>
+                                <p class="services-item__header">Солнечная Испания</p>
+                            </div>
+                            <div class="services-item__info-block">
+                                <img src="img/section-services/time-icon.svg" alt="" class="services-item__icon">
+                                <p class="services-item__info-text">16:00-18:00</p>
+                            </div>
+                            <div class="services-item__info-block">
+                                <img src="img/section-services/seats-icon.svg" alt="" class="services-item__icon">
+                                <p class="services-item__info-text">Осталось 8 мест</p>
+                            </div>
+                            <div class="services-item__info-block">
+                                <img src="img/section-services/ruble-icon.svg" alt="" class="services-item__icon">
+                                <p class="services-item__info-text">3500 рублей</p>
+                            </div>
+                            <button class="button services-item__button" onclick="showModalWindow()">Оставить
+                                заявку</button>
+                        </div>
+                        <div class="section-services__item">
+                            <img src="img/section-services/3.png" alt="" class="services-item__img">
+                            <p class="services-item__date">11<br>мая</p>
+                            <div class="services-item__title-block">
+                                <div class="services-item__line"></div>
+                                <p class="services-item__header">Окно в Европу</p>
+                            </div>
+                            <div class="services-item__info-block">
+                                <img src="img/section-services/time-icon.svg" alt="" class="services-item__icon">
+                                <p class="services-item__info-text">19:00-21:00</p>
+                            </div>
+                            <div class="services-item__info-block">
+                                <img src="img/section-services/seats-icon.svg" alt="" class="services-item__icon">
+                                <p class="services-item__info-text">Осталось 4 места</p>
+                            </div>
+                            <div class="services-item__info-block">
+                                <img src="img/section-services/ruble-icon.svg" alt="" class="services-item__icon">
+                                <p class="services-item__info-text">2700 рублей</p>
+                            </div>
+                            <button class="button services-item__button" onclick="showModalWindow()">Оставить
+                                заявку</button>
+                        </div>
+                        <div class="section-services__item">
+                            <img src="img/section-services/4.png" alt="" class="services-item__img">
+                            <p class="services-item__date">13<br>мая</p>
+                            <div class="services-item__title-block">
+                                <div class="services-item__line"></div>
+                                <p class="services-item__header">Курс Сомелье. Дегустация вин</p>
+                            </div>
+                            <div class="services-item__info-block">
+                                <img src="img/section-services/time-icon.svg" alt="" class="services-item__icon">
+                                <p class="services-item__info-text">18:00-21:00</p>
+                            </div>
+                            <div class="services-item__info-block">
+                                <img src="img/section-services/seats-icon.svg" alt="" class="services-item__icon">
+                                <p class="services-item__info-text">Осталось 1 место</p>
+                            </div>
+                            <div class="services-item__info-block">
+                                <img src="img/section-services/ruble-icon.svg" alt="" class="services-item__icon">
+                                <p class="services-item__info-text">3000 рублей</p>
+                            </div>
+                            <button class="button services-item__button" onclick="showModalWindow()">Оставить
+                                заявку</button>
+                        </div>
+                        <div class="section-services__item">
+                            <img src="img/section-services/5.png" alt="" class="services-item__img">
+                            <p class="services-item__date">16<br>мая</p>
+                            <div class="services-item__title-block">
+                                <div class="services-item__line"></div>
+                                <p class="services-item__header">Вкус Италии</p>
+                            </div>
+                            <div class="services-item__info-block">
+                                <img src="img/section-services/time-icon.svg" alt="" class="services-item__icon">
+                                <p class="services-item__info-text">17:00-19:30</p>
+                            </div>
+                            <div class="services-item__info-block">
+                                <img src="img/section-services/seats-icon.svg" alt="" class="services-item__icon">
+                                <p class="services-item__info-text">Осталось 4 места</p>
+                            </div>
+                            <div class="services-item__info-block">
+                                <img src="img/section-services/ruble-icon.svg" alt="" class="services-item__icon">
+                                <p class="services-item__info-text">2500 рублей</p>
+                            </div>
+                            <button class="button services-item__button" onclick="showModalWindow()">Оставить
+                                заявку</button>
+                        </div>
+                        <div class="section-services__item">
+                            <img src="img/section-services/6.png" alt="" class="services-item__img">
+                            <p class="services-item__date">19<br>мая</p>
+                            <div class="services-item__title-block">
+                                <div class="services-item__line"></div>
+                                <p class="services-item__header">Сочный бургер</p>
+                            </div>
+                            <div class="services-item__info-block">
+                                <img src="img/section-services/time-icon.svg" alt="" class="services-item__icon">
+                                <p class="services-item__info-text">13:00-16:00</p>
+                            </div>
+                            <div class="services-item__info-block">
+                                <img src="img/section-services/seats-icon.svg" alt="" class="services-item__icon">
+                                <p class="services-item__info-text">Осталось 9 мест</p>
+                            </div>
+                            <div class="services-item__info-block">
+                                <img src="img/section-services/ruble-icon.svg" alt="" class="services-item__icon">
+                                <p class="services-item__info-text">2000 рублей</p>
+                            </div>
+                            <button class="button services-item__button" onclick="showModalWindow()">Оставить
+                                заявку</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button onclick="swipeService(false, 'right')" class="slider__button-arrow">
+                <img src="img/right-arrow.svg" alt="">
+            </button>
+        </div>
+    </section>
+    <section class="section-some-celebrate">
+        <h2 class="header--secondary section-some-celebrate__header--secondary">
+            Хотите отпраздновать какое-то событие?
+        </h2>
+        <hr class="section-some-celebrate__hr">
+        <div class="section-some-celebrate__content">
+            <img src="img/section-some-celebrate/1.png" alt="" class="section-some-celebrate__img">
+            <div class="section-some-celebrate__container">
+                <p class="section-some-celebrate__header">Взрослые мероприятия</p>
+                <p class="section-some-celebrate__text">
+                    Мастер-классы в кулинарной студии укрепляют отношения,
+                    обучая новым навыкам в непринужденной обстановке.
+                    Совместная работа в непривычных условиях!
+                </p>
+                <button class="button section-some-celebrate__button" onclick="showModalWindow()">Оставить
+                    заявку</button>
+            </div>
+            <div class="section-some-celebrate__container">
+                <p class="section-some-celebrate__header">Детские мероприятия</p>
+                <p class="section-some-celebrate__text">
+                    Дети - самое важное, что есть в нашей жизни! Поэтому мы хотим дать
+                    им самое лучшее и побаловать их. Предлагаем удивить вашего ребенка
+                    и устроить незабываемый праздник в Кулинарной студии «Базилик».
+                </p>
+                <button class="button section-some-celebrate__button" onclick="showModalWindow()">Оставить
+                    заявку</button>
+            </div>
+            <img src="img/section-some-celebrate/2.png" alt="" class="section-some-celebrate__img">
+        </div>
+        <hr class="section-some-celebrate__hr">
+    </section>
+    <section class="section-reviews" id="section-reviews">
+        <hr class="section__hr section-reviews__hr">
+        <h4 class="header--quaternary section-reviews__header--quaternary">ЧТО ГОВОРЯТ?</h4>
+        <h2 class="header--secondary section-reviews__header--secondary">Отзывы</h2>
+        <h3 class="header--tertiary section-reviews__header--tertiary">#только настоящие</h3>
+        <div class="section-reviews__slider">
+            <button onclick="swipeReview(false, 'left')" class="slider__button-arrow">
+                <img src="img/left-arrow.svg" alt="">
+            </button>
+            <div class="section-reviews__window">
+                <div class="section-reviews__list">
+                    <div class="section-reviews__item">
+                        <p class="section-reviews__description">
+                            Научилась готовить с нуля благодаря мастер-классам.
+                            Профессиональные повара, которые всегда помогут.
+                            Спасибо за то, что вы есть!!
+                        </p>
+                        <div class="section-reviews__user">
+                            <img src="img/section-reviews/1.png" alt="" class="section-reviews__user-avatar">
+                            <p class="section-reviews__user-name">Полина Абушная</p>
+                        </div>
+                    </div>
+                    <div class="section-reviews__item">
+                        <p class="section-reviews__description">
+                            Отличное место и для корпоративов, и для более узкого круга
+                            семьи или друзей. Есть экран, проектор. Премиум техника,
+                            вкусные продукты. Отличные ребята работают.
+                        </p>
+                        <div class="section-reviews__user">
+                            <img src="img/section-reviews/2.png" alt="" class="section-reviews__user-avatar">
+                            <p class="section-reviews__user-name">Максим Иконописцев</p>
+                        </div>
+                    </div>
+                    <div class="section-reviews__item">
+                        <p class="section-reviews__description">
+                            Отличный вариант отпраздновать День Рождения! Оставила заявку
+                            в инстаграме. Со мной быстро связались, все рассказали, помогли
+                            выбрать меню, забронировали. Праздник прошел просто
+                            восхитительно! Спасибо большое шеф-повару Ярославу!
+                        </p>
+                        <div class="section-reviews__user">
+                            <img src="img/section-reviews/3.png" alt="" class="section-reviews__user-avatar">
+                            <p class="section-reviews__user-name">Софья Давтян</p>
+                        </div>
+                    </div>
+                    <div class="section-reviews__item">
+                        <p class="section-reviews__description">
+                            Прекрасная атмосфера уюта и вкусной еды! Прекрасный
+                            внимательный и профессиональный персонал!!!
+                        </p>
+                        <div class="section-reviews__user">
+                            <img src="img/section-reviews/4.png" alt="" class="section-reviews__user-avatar">
+                            <p class="section-reviews__user-name">Владислав Иголинский</p>
+                        </div>
+                    </div>
+                    <div class="section-reviews__item">
+                        <p class="section-reviews__description">
+                            Отмечали День Рождения в Базилике. Отличные впечатления!
+                            Согласовали все очень быстро, студия качественно подготовилась
+                            за 1 день. Нам очень понравился мастер-класс, все было
+                            вкусно и интересно.
+                        </p>
+                        <div class="section-reviews__user">
+                            <img src="img/section-reviews/5.png" alt="" class="section-reviews__user-avatar">
+                            <p class="section-reviews__user-name">Александр Залипаев</p>
+                        </div>
+                    </div>
+                    <div class="section-reviews__item">
+                        <p class="section-reviews__description">
+                            Кулинарный мастер-класс просто топ, мы приготовили черные
+                            равиоли с лососем и шпинатом. Листайте, смотрите галерею, бон
+                            аппетит. Мы остались довольны и блюдом, и атмосферой.
+                        </p>
+                        <div class="section-reviews__user">
+                            <img src="img/section-reviews/6.png" alt="" class="section-reviews__user-avatar">
+                            <p class="section-reviews__user-name">Константин Кулеша</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button onclick="swipeReview(false, 'right')" class="slider__button-arrow">
+                <img src="img/right-arrow.svg" alt="">
+            </button>
+        </div>
+        <div class="section-reviews__hr-block">
+            <hr class="section__hr section-reviews__hr section-reviews__hr--longest">
+            <hr class="section__hr section-reviews__hr section-reviews__hr--normal">
+            <hr class="section__hr section-reviews__hr--tiny">
+        </div>
+    </section>
+    <section class="section-galery">
+        <h2 class="header--secondary">#ГАЛЕРЕЯ</h2>
+        <div class="section-galery__container">
+            <button onclick="filterGalery('events')"
+                class="section-galery__button-filter section-galery__button-filter--active">Мероприятия</button>
+            <button onclick="filterGalery('dishes')" class="section-galery__button-filter">Блюда</button>
+            <div class="section-galery__content section-galery__content--active" id="section-galery__events">
+                <img src="img/section-galery/1m.png" alt="" class="section-galery__img">
+                <img src="img/section-galery/2m.png" alt="" class="section-galery__img">
+                <img src="img/section-galery/3m.png" alt="" class="section-galery__img">
+                <img src="img/section-galery/4m.png" alt="" class="section-galery__img">
+            </div>
+            <div class="section-galery__content" id="section-galery__dishes">
+                <img src="img/section-galery/1d.png" alt="" class="section-galery__img">
+                <img src="img/section-galery/2d.png" alt="" class="section-galery__img">
+                <img src="img/section-galery/3d.png" alt="" class="section-galery__img">
+                <img src="img/section-galery/4d.png" alt="" class="section-galery__img">
+            </div>
+        </div>
+    </section>
+    <section class="section-contacts" id="section-contacts">
+        <div class="section-contacts__container--main">
+            <hr class="section__hr section-contacts__hr--location">
+            <h4 class="header--quaternary section-contacts__header--location">ГДЕ НАХОДИМСЯ?</h4>
+            <div class="section-contacts__container--second section-contacts__container--second--location">
+                <iframe
+                    src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa39f686d571723f77439fbede31b8ca5ff2e537ab35cbfba00338863ee67f44c&amp;source=constructor"
+                    width="100%" height="100%" frameborder="0">
+                </iframe>
+            </div>
+        </div>
+        <div class="section-contacts__container--main">
+            <hr class="section__hr section-contacts__hr--info">
+            <h4 class="header--quaternary section-contacts__header--info">КАК СВЯЗАТЬСЯ?</h4>
+            <div class="section-contacts__container--second">
+                <div class="section-contacts__container--third">
+                    <img src="img/section-contacts/time-icon.svg" alt="" class="section-contacts__icon">
+                    <p class="section-contacts__text">Режим работы</p>
+                    <p class="section-contacts__text">
+                        <span class="section-contacts__span">с 10:00 до 22:00</span>
+                    </p>
+                    <p class="section-contacts__text">г. Йошкар-Ола,<br>ул. Эшкинина, д. 10</p>
+                </div>
+                <hr class="section__hr section-contacts__hr--line">
+                <div class="section-contacts__container--third">
+                    <img src="img/section-contacts/phone-icon.svg" alt="" class="section-contacts__icon">
+                    <p class="section-contacts__text">Звоните по телефону</p>
+                    <p class="section-contacts__text">
+                        <span class="section-contacts__span">+7 (902) 435-05-25 </span>
+                    </p>
+                </div>
+                <hr class="section__hr section-contacts__hr--line">
+                <div class="section-contacts__container--third">
+                    <img src="img/section-contacts/letter-icon.svg" alt="" class="section-contacts__icon">
+                    <p class="section-contacts__text">По вопросам сотрудничества</p>
+                    <p class="section-contacts__text">
+                        <span class="section-contacts__span">guest@basilic12.ru</span>
+                    </p>
+                    <div class="section-contacts__social-links-block">
+                        <a href="" class="section-contacts__social-link"><img src="img/section-contacts/vk-icon.svg"
+                                alt=""></a>
+                        <a href="" class="section-contacts__social-link"><img
+                                src="img/section-contacts/instagram-icon.svg" alt=""></a>
+                        <a href="" class="section-contacts__social-link"><img src="img/section-contacts/tiktok-icon.svg"
+                                alt=""></a>
+                        <a href="" class="section-contacts__social-link"><img
+                                src="img/section-contacts/telegram-icon.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <nav class="footer__nav">
+            <a href="" class="footer__link">Политика конфиденциальности</a>
+            <div class="footer__line"></div>
+            <a href="" class="footer__link">Пользовательское соглашение</a>
+            <a href="" class="footer__link">Договор оферты</a>
+            <div class="footer__line"></div>
+            <a href="" class="footer__link">Согласие на обработку персональных данных</a>
+        </nav>
+        <p class="footer__text">© "Кулинарная студия Базилик", 2015-2022.<br>Все права защищены</p>
+    </footer>
+    <div class="burger-menu">
+        <button onclick="showBurgerMenu(false)" class="burger-menu__button-close">
+            <svg width="35" height="36" viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2.76807" y="0.578125" width="45" height="3.3318" transform="rotate(45 2.76807 0.578125)"
+                    fill="#262626" />
+                <rect x="34.1758" y="3.35596" width="45" height="3.3318" transform="rotate(135 34.1758 3.35596)"
+                    fill="#262626" />
+            </svg>
+        </button>
+        <a href="#section-about-us" class="burger-menu__link">О нас</a>
+        <a href="#section-our-pluses" class="burger-menu__link">Преимущества</a>
+        <a href="#section-services" class="burger-menu__link">Услуги</a>
+        <a href="#section-reviews" class="burger-menu__link">Отзывы</a>
+        <a href="#section-contacts" class="burger-menu__link">Контакты</a>
+    </div>
+    <div class="modal-window">
+        <div class="modal-window__content">
+            <h2 class="header--secondary modal-window__header--secondary">Оставить заявку</h2>
+            <form class="modal-window__form">
+                <input type="text" placeholder="Фамилия*" class="modal-window__input">
+                <input type="text" placeholder="Имя*" class="modal-window__input">
+                <input type="text" placeholder="Телефон" class="modal-window__input">
+                <input type="text" placeholder="Email" class="modal-window__input">
+                <textarea placeholder="Сообщение" class="modal-window__textarea"></textarea>
+                <button class="button modal-window__button" type="reset" onclick="showModalWindow()">Оставить
+                    заявку</button>
+                <button class="modal-window__close-button" type="reset" onclick="showModalWindow()">
+                    <img src="img/close-icon.svg" alt="">
+                </button>
+            </form>
+            <p class="modal-window__text">
+                Нажимая на кнопку “Отправить”, Вы даете согласие на обработку ваших
+                персональных данных в соответствии с Политикой конфиденциальности.
+            </p>
+        </div>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
